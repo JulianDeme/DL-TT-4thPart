@@ -44,8 +44,25 @@ To be able to successfully run the e2e automation test, follow the next steps:
 5. Run `npm test` to run the e2e test.
 6. Run `npm run allure-report` to generate test reports.
 
-#
+## Solution
+First, the visibility of the header buttons is tested. Then, the "Get in touch" button is clicked, displaying the modal with the "Get in touch" form.
+<br />
+Once in the form, the visibility of all the fields is tested, along with the text in the elements that contains text.
+<br />
+Then, the "Send" buttons is clicked, activating the validations which are also tested, checking the changes on the attribute of the elements.
+<br />
+And finally, each field is completed one by one with valid data while checking the change on certain attributes to be sure that the result is correct.
 
+## Proposed improvements
+- Implementation of data-testid.
+- Correct use of classes and ids.
+- Correct use of the HTML box model.
+- Improve the names of classes and ids.
+- Add more validations to the forms
+- Add error messages to forms
+
+
+#
 ### Author
 
 Julián Demeglio

@@ -96,4 +96,5 @@ describe('"Get in touch" form e2e', function () {
       .setValue('#wpforms-872-field_2-container textarea', 'abcdℇfghijklmnñoπqrstubwxyz 1234567890!"#$%&/()=?+-')
       .assert.attributeEquals("#wpforms-872-field_2-container textarea", "aria-invalid", "false")
   });
+  after(browser => browser.end());
 });
