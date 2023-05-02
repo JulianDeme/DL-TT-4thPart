@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
-    },
+    "clean":"rimraf dist logs screenshots test_output",
+    "test": "npm run clean && nightwatch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^112.0.1",
     "nightwatch": "^2.6.20"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.0"
   }
 }
