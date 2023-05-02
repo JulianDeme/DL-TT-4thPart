@@ -2,3 +2,6 @@ node_modules
 logs
 tests_output
 nightwatch/examples
+nightwatch/templates
+allure-results
+allure-report

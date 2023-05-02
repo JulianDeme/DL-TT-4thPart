@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean":"rimraf dist logs screenshots test_output",
-    "test": "npm run clean && nightwatch"
+    "pretest": "rimraf allure-results && rimraf allure-report && rimraf tests_output && rimraf logs",
+    "test": "npm run pretest && nightwatch",
+    "allure-report": "allure generate ./allure-results --clean && allure open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^112.0.1",
-    "nightwatch": "^2.6.20"
+    "nightwatch": "^2.6.20",
+    "nightwatch-allure": "^1.2.0"
   },
   "dependencies": {
     "rimraf": "^5.0.0"
