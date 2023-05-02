@@ -1,0 +1,16 @@
+{
+  "name": "dl-tt-4thpart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^112.0.1",
+    "nightwatch": "^2.6.20"
+  }
+}
